@@ -1,5 +1,7 @@
 # Vulnetix Platform IaC examples
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/platform-iac-examples)
+
 A reference for every [Platform IaC](https://docs.vulnetix.com/platform-iac/) kind: one file per
 kind that sets **every argument that has a schema default, to that default**, plus the arguments
 the kind requires. Copy what you need into your own configuration.
