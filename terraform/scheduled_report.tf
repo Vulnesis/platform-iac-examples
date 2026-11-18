@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/ScheduledReport/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_scheduled_report" "daily_dns_digest" {
+resource "vulnetix_scheduled_report" "daily_dns_digest" {
   name = "daily-dns-digest"
   at   = "08:00"
   destination = {

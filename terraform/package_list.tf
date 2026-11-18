@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/PackageList/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_package_list" "banned" {
+resource "vulnetix_package_list" "banned" {
   name = "banned"
   entries = [
     {

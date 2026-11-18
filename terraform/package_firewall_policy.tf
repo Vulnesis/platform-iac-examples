@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/PackageFirewallPolicy/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_package_firewall_policy" "default" {
+resource "vulnetix_package_firewall_policy" "default" {
   block = {
     active     = false
     bad_actors = false

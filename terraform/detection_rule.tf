@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/DetectionRule/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_detection_rule" "sigmahq_aws_root_login" {
+resource "vulnetix_detection_rule" "sigmahq_aws_root_login" {
   name               = "sigmahq-aws-root-login"
   enabled            = true
   interval_sec       = 60

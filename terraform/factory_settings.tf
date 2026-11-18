@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/FactorySettings/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_factory_settings" "default" {
+resource "vulnetix_factory_settings" "default" {
   agents = {
     finalize_at           = 0
     max_attempts          = 0

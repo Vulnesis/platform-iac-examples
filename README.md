@@ -28,7 +28,7 @@ clean. `PROVIDER_VERSION` names the provider release they were copied from.
 
   ```hcl
   import {
-    to = vulnesis_quality_gate.default
+    to = vulnetix_quality_gate.default
     id = "default"
   }
   ```

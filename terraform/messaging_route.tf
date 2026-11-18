@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/MessagingRoute/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_messaging_route" "broken_builds" {
+resource "vulnetix_messaging_route" "broken_builds" {
   name = "broken-builds"
   actor_filter = {
     mode = "any"

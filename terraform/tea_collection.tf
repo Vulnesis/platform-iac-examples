@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/TeaCollection/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_tea_collection" "acme_payments_2_4_0" {
+resource "vulnetix_tea_collection" "acme_payments_2_4_0" {
   name    = "acme-payments-2-4-0"
   product = "acme-payments"
   release = "2.4.0"

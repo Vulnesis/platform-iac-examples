@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/SsvcPolicy/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_ssvc_policy" "default" {
+resource "vulnetix_ssvc_policy" "default" {
   automatable = "cvss >= 9.0 || epss >= 0.7"
   exploitation = {
     active = "kev || exploitMaturity in ['active', 'weaponized']"

@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/AiFirewallPolicy/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_ai_firewall_policy" "default" {
+resource "vulnetix_ai_firewall_policy" "default" {
   hold_policy = {
     hold_timeout_action  = "wait"
     hold_timeout_minutes = 0

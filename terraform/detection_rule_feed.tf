@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/DetectionRuleFeed/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_detection_rule_feed" "edge_waf" {
+resource "vulnetix_detection_rule_feed" "edge_waf" {
   name = "edge-waf"
   entries = [
     {

@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/AlertTrigger/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_alert_trigger" "dns_investigate" {
+resource "vulnetix_alert_trigger" "dns_investigate" {
   name = "dns-investigate"
   destination = {
     kind = "workflow"

@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/CloudSensors/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_cloud_sensors" "estate" {
+resource "vulnetix_cloud_sensors" "estate" {
   name    = "estate"
   account = "*"
   deploy  = false

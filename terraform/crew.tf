@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/Crew/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_crew" "review_crew" {
+resource "vulnetix_crew" "review_crew" {
   name = "review-crew"
   members = [
     {

@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/MessagingConnection/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_messaging_connection" "security_slack" {
+resource "vulnetix_messaging_connection" "security_slack" {
   name   = "security-slack"
   paused = false
   type   = "slack"

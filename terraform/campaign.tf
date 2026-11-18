@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/Campaign/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_campaign" "log4shell" {
+resource "vulnetix_campaign" "log4shell" {
   name         = "log4shell"
   display_name = "Log4Shell clean-up"
   done = {

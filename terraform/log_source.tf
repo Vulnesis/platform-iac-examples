@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/LogSource/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnesis_log_source" "sensor_events" {
+resource "vulnetix_log_source" "sensor_events" {
   name = "sensor-events"
   type = "events"
 }
