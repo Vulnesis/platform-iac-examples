@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/FactorySchedule/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_factory_schedule" "nightly" {
+resource "vulnesis_factory_schedule" "nightly" {
   name     = "nightly"
   cron     = "0 3 * * *"
   enabled  = true

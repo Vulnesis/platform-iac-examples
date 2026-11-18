@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/AiGovernanceList/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_ai_governance_list" "deny_shell_tools" {
+resource "vulnesis_ai_governance_list" "deny_shell_tools" {
   name     = "deny-shell-tools"
   action   = "block"
   enabled  = true

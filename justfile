@@ -9,11 +9,11 @@ sync TAG:
     #!/usr/bin/env bash
     set -euo pipefail
     src=$(mktemp -d); trap 'rm -rf "$src"' EXIT
-    git -c advice.detachedHead=false clone -q --depth 1 --branch "{{TAG}}" https://github.com/Vulnetix/terraform-provider-resolve.git "$src"
+    git -c advice.detachedHead=false clone -q --depth 1 --branch "{{TAG}}" https://github.com/Vulnesis/terraform-provider-resolve.git "$src"
     find terraform -maxdepth 1 -name '*.tf' ! -name versions.tf ! -name provider.tf -delete
     rm -f yaml/*.yaml
-    for d in "$src"/examples/resources/vulnetix_*/; do
-        type=$(basename "$d"); type=${type#vulnetix_}
+    for d in "$src"/examples/resources/vulnesis_*/; do
+        type=$(basename "$d"); type=${type#vulnesis_}
         cp "$d/reference.tf" "terraform/$type.tf"
         kind=$(awk '/^kind:/ {print $2; exit}' "$d/reference.yaml")
         cp "$d/reference.yaml" "yaml/$kind.yaml"
@@ -27,7 +27,7 @@ check:
     terraform -chdir=terraform init -backend=false -input=false >/dev/null
     terraform -chdir=terraform validate
 
-# Plan against your tenant (VULNETIX_API_KEY and VULNETIX_ORG_ID in the environment)
+# Plan against your tenant (VULNESIS_API_KEY and VULNESIS_ORG_ID in the environment)
 plan:
     terraform -chdir=terraform init -input=false >/dev/null
     terraform -chdir=terraform plan -input=false

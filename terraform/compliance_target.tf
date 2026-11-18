@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/ComplianceTarget/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_compliance_target" "quarterly_owasp" {
+resource "vulnesis_compliance_target" "quarterly_owasp" {
   name      = "quarterly-owasp"
   cadence   = "quarterly"
   enabled   = true

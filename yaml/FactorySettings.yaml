@@ -1,7 +1,7 @@
 # Every field with a schema default, set to that default, plus the required
 # fields from config-schemas examples/FactorySettings/minimal.yaml. reference.tf is the same
 # document as Terraform.
-apiVersion: vulnetix.com/v1
+apiVersion: vulnes.is/v1
 kind: FactorySettings
 metadata:
   name: default

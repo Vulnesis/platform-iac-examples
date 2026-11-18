@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/TeaComponent/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_tea_component" "payments_api" {
+resource "vulnesis_tea_component" "payments_api" {
   name           = "payments-api"
   component_name = "payments-api"
 }

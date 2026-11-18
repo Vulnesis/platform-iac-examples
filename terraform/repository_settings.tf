@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/RepositorySettings/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_repository_settings" "acme_payments_api" {
+resource "vulnesis_repository_settings" "acme_payments_api" {
   name = "acme-payments-api"
   asset_labels = {
   }

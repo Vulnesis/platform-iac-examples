@@ -3,8 +3,8 @@ terraform {
   required_version = ">= 1.11.0"
 
   required_providers {
-    vulnetix = {
-      source  = "vulnetix/resolve"
+    vulnesis = {
+      source  = "vulnesis/resolve"
       version = "~> 1.4"
     }
   }

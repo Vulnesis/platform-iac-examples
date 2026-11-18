@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/FactoryWorkflow/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_factory_workflow" "patch_on_demand" {
+resource "vulnesis_factory_workflow" "patch_on_demand" {
   name    = "patch-on-demand"
   enabled = true
   graph = {

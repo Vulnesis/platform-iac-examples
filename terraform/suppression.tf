@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/Suppression/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_suppression" "lodash_prototype_pollution" {
+resource "vulnesis_suppression" "lodash_prototype_pollution" {
   name = "lodash-prototype-pollution"
   scope = {
     rule = "CVE-2021-23337"

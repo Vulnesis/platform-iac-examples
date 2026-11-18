@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/RuntimeSensorPolicy/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_runtime_sensor_policy" "engineering_laptops" {
+resource "vulnesis_runtime_sensor_policy" "engineering_laptops" {
   name                    = "engineering-laptops"
   allow_major_update      = false
   allow_user_stop         = false

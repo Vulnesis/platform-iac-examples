@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/NotificationDefaults/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_notification_defaults" "default" {
+resource "vulnesis_notification_defaults" "default" {
   push = {
   }
 }

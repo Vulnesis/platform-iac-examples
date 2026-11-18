@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/TeaAccessPolicy/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_tea_access_policy" "acme_payments" {
+resource "vulnesis_tea_access_policy" "acme_payments" {
   name       = "acme-payments"
   product    = "acme-payments"
   visibility = "private"

@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/AiProvider/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_ai_provider" "acme_vllm" {
+resource "vulnesis_ai_provider" "acme_vllm" {
   name        = "acme-vllm"
   auth        = "bearer"
   base_url    = "https://llm.acme.example"

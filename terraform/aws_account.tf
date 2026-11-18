@@ -2,7 +2,7 @@
 # arguments from config-schemas examples/AwsAccount/minimal.yaml. A plan only sets values
 # a tenant left unset. See advanced.tf for the arguments that have no default.
 
-resource "vulnetix_aws_account" "production" {
+resource "vulnesis_aws_account" "production" {
   name       = "production"
   account_id = "123456789012"
   deploy     = false
