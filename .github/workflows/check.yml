@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   check:
-    runs-on: [self-hosted, Linux, X64, vulnesis-local]
+    runs-on: [self-hosted, Linux, X64, vulnetix-local]
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7.0.1

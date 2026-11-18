@@ -4,7 +4,7 @@ terraform {
 
   required_providers {
     vulnetix = {
-      source  = "vulnesis/resolve"
+      source  = "vulnetix/resolve"
       version = "~> 1.4"
     }
   }

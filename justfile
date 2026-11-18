@@ -12,8 +12,8 @@ sync TAG:
     git -c advice.detachedHead=false clone -q --depth 1 --branch "{{TAG}}" https://github.com/Vulnesis/terraform-provider-resolve.git "$src"
     find terraform -maxdepth 1 -name '*.tf' ! -name versions.tf ! -name provider.tf -delete
     rm -f yaml/*.yaml
-    for d in "$src"/examples/resources/vulnesis_*/; do
-        type=$(basename "$d"); type=${type#vulnesis_}
+    for d in "$src"/examples/resources/vulnetix_*/; do
+        type=$(basename "$d"); type=${type#vulnetix_}
         cp "$d/reference.tf" "terraform/$type.tf"
         kind=$(awk '/^kind:/ {print $2; exit}' "$d/reference.yaml")
         cp "$d/reference.yaml" "yaml/$kind.yaml"

@@ -7,7 +7,7 @@ resource "vulnetix_vex_source" "local_vex" {
   format   = "auto"
   on_error = "keep-last"
   path = {
-    path = ".vulnesis/vex.openvex.json"
+    path = ".vulnetix/vex.openvex.json"
   }
   trust = {
     require_signature = false

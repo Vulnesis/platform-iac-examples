@@ -9,6 +9,6 @@ spec:
   format: auto
   onError: keep-last
   path:
-    path: .vulnesis/vex.openvex.json
+    path: .vulnetix/vex.openvex.json
   trust:
     requireSignature: false
